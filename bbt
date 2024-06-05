@@ -1,0 +1,32 @@
+class bbt:
+    def __init__(self, name, size, iceLevel, sugarLevel, tea, toppings, price):
+        self.__name = name
+        self.__size = size 
+        self.__iceLevel = iceLevel
+        self.__sugarLevel = sugarLevel
+        self.__tea = tea
+        self.__toppings = []
+        self.__price = price    
+
+    
+    def AddToppings(self, topping):
+        self.__toppings.append(topping)
+
+    def RemoveTopping(self, topping):
+        if topping in self.__toppings:
+            self.__toppings.remove(topping)
+        else: 
+            print ("Couldnt find topping to remove")
+
+    def get_toppings(self):
+        return self.__toppings
+    
+    def pricebbt (self):
+        pass
+
+    
+
+
+
+
+
